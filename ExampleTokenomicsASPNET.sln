@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TockenomicsMVC", "TockenomicsMVC\TockenomicsMVC.csproj", "{8010C155-9AFA-41BE-A175-3B2BA6302628}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8010C155-9AFA-41BE-A175-3B2BA6302628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8010C155-9AFA-41BE-A175-3B2BA6302628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8010C155-9AFA-41BE-A175-3B2BA6302628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8010C155-9AFA-41BE-A175-3B2BA6302628}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D57626C6-906D-47F0-B7ED-AEAA26ED2042}
+	EndGlobalSection
+EndGlobal

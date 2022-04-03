@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6Uhmt+WIUDq1+AWKFFCeOuu7XVDORsOzCB26ghARUoBrWgAh+S4+ZrJlFarapyo8Nsd7coIIC3ic/Rm/eG0rmw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eureq\\source\\repos\\ExampleTokenomicsASPNET\\ExampleTokenomicsASPNET\\ExampleTokenomicsASPNET.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eureq\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}
