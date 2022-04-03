@@ -16,7 +16,7 @@
         {
             return USDBalance / TokenBalance;
         }
-        public double USDValue() 
+        public double MarketCap() 
         {
             return TokenBalance * TokenPrice();
         }
@@ -43,8 +43,7 @@
     {
         public double MaxEmmissionsPerDay { get; private set; }
         public double TotalSupply { get; private set; }
-        private Treasury Treasury { get; set; }
-        public double Price { get; private set; }
+        private Treasury Treasury { get; private set; }
         public Economy(double MaxEmmissionsPerDay, double TreasuryUSDInitalBalance, double TreasuryTokenInitalBalance)
         {
             if (MaxEmmissionsPerDay <= 0)           throw new ArgumentException("Max Emmissions Per Day must be greater than 0");
@@ -54,7 +53,6 @@
             this.MaxEmmissionsPerDay = MaxEmmissionsPerDay;
             this.TotalSupply = TreasuryTokenInitalBalance;
             Treasury = new Treasury(TreasuryUSDInitalBalance, TreasuryTokenInitalBalance);
-            Price = Treasury.TokenPrice();
         }
         public double Sell(double amount)
         {
@@ -72,6 +70,20 @@
             TotalSupply += amount;                  // Add the amount of tokens to the total supply
             var TokenAmount = Treasury.Buy(amount); // Buy the amount of tokens and get the amount of USD that should be send to the user
             return TokenAmount;                     // Return the amount of USD that should be send to the user
+        }
+        public double Emmision(double amount)
+        {
+            if (amount / Treasury.TokenPrice() > this.MaxEmmissionsPerDay) // Check if the amount of tokens that should be emmited is greater than the max emmissions per day
+            {
+                this.TotalSupply += (this.MaxEmmissionsPerDay); // If so, add the max emmissions per day to the total supply
+                this.Treasury.USDBalance += amount; // Add the max emmissions per day to the treasury balance
+            }
+            else 
+            {
+                var _toBeEmmited = amount / Treasury.TokenPrice();
+                this.TotalSupply += _toBeEmmited;
+                this.Treasury.USDBalance += amount;
+            }
         }
     }
 }
