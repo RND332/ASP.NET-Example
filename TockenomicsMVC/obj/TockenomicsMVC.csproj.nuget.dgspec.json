@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eureq\\source\\repos\\ExampleTokenomicsASPNET\\TockenomicsMVC\\TockenomicsMVC.csproj": {}
+    "C:\\Users\\eureq\\Documents\\GitHub\\ASP.NET-Example\\TockenomicsMVC\\TockenomicsMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eureq\\source\\repos\\ExampleTokenomicsASPNET\\TockenomicsMVC\\TockenomicsMVC.csproj": {
+    "C:\\Users\\eureq\\Documents\\GitHub\\ASP.NET-Example\\TockenomicsMVC\\TockenomicsMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eureq\\source\\repos\\ExampleTokenomicsASPNET\\TockenomicsMVC\\TockenomicsMVC.csproj",
+        "projectUniqueName": "C:\\Users\\eureq\\Documents\\GitHub\\ASP.NET-Example\\TockenomicsMVC\\TockenomicsMVC.csproj",
         "projectName": "TockenomicsMVC",
-        "projectPath": "C:\\Users\\eureq\\source\\repos\\ExampleTokenomicsASPNET\\TockenomicsMVC\\TockenomicsMVC.csproj",
+        "projectPath": "C:\\Users\\eureq\\Documents\\GitHub\\ASP.NET-Example\\TockenomicsMVC\\TockenomicsMVC.csproj",
         "packagesPath": "C:\\Users\\eureq\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eureq\\source\\repos\\ExampleTokenomicsASPNET\\TockenomicsMVC\\obj\\",
+        "outputPath": "C:\\Users\\eureq\\Documents\\GitHub\\ASP.NET-Example\\TockenomicsMVC\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\eureq\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

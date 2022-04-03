@@ -37,13 +37,18 @@
             TokenBalance -= amount;                 // Bought tokens are subtracted from the treasury tokens balance
             USDBalance += (amount * TokenPrice());  // Calculate the amount of tokens that which should be send to the user and withdraw it from the treasury
             return amount * TokenPrice();           // Return the amount of tokens that should be send to the user
-        } 
+        }
+        public void AddMoneyFromEmmision(double amount) 
+        {
+            if (amount <= 0) throw new Exception("Amount must be greater than 0");
+            this.USDBalance += amount;
+        }
     }
     public class Economy
     {
         public double MaxEmmissionsPerDay { get; private set; }
         public double TotalSupply { get; private set; }
-        private Treasury Treasury { get; private set; }
+        private Treasury Treasury { get; set; }
         public Economy(double MaxEmmissionsPerDay, double TreasuryUSDInitalBalance, double TreasuryTokenInitalBalance)
         {
             if (MaxEmmissionsPerDay <= 0)           throw new ArgumentException("Max Emmissions Per Day must be greater than 0");
@@ -76,14 +81,15 @@
             if (amount / Treasury.TokenPrice() > this.MaxEmmissionsPerDay) // Check if the amount of tokens that should be emmited is greater than the max emmissions per day
             {
                 this.TotalSupply += (this.MaxEmmissionsPerDay); // If so, add the max emmissions per day to the total supply
-                this.Treasury.USDBalance += amount; // Add the max emmissions per day to the treasury balance
+                this.Treasury.AddMoneyFromEmmision(amount); // Add the max emmissions per day to the treasury balance
             }
             else 
             {
                 var _toBeEmmited = amount / Treasury.TokenPrice();
                 this.TotalSupply += _toBeEmmited;
-                this.Treasury.USDBalance += amount;
+                this.Treasury.AddMoneyFromEmmision(amount);
             }
+            return this.Treasury.TokenPrice();
         }
     }
 }

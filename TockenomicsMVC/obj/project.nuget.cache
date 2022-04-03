@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4fBgQsgQqTPzh5WtvtAC11TZAefPVwp8ursJBcQyaE14msKPJMDnLqSGmJAz2WwSDsC3gf+adX8qKVVbUEbNCg==",
+  "dgSpecHash": "DYXi6H8YTlQQ6iNXBsRZAZe5Jd2cnXx0aMs8T955Fo+MOce6IsM7BzHWoSEhmFklaWu986nTGIDavJ09LNEHAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\eureq\\source\\repos\\ExampleTokenomicsASPNET\\TockenomicsMVC\\TockenomicsMVC.csproj",
+  "projectFilePath": "C:\\Users\\eureq\\Documents\\GitHub\\ASP.NET-Example\\TockenomicsMVC\\TockenomicsMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eureq\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
   ],
