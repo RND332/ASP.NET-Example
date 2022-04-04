@@ -1,6 +1,8 @@
-﻿namespace TockenomicsMVC.Models
+﻿using TockenomicsMVC.Models.Interfaces;
+
+namespace TockenomicsMVC.Models
 {
-    class Treasury 
+    public class Treasury 
     {
         public double USDBalance { get; private set; }
         public double TokenBalance { get; private set; }
@@ -44,11 +46,11 @@
             this.USDBalance += amount;
         }
     }
-    public class Economy
+    public class Economy : IEconomy
     {
         public double MaxEmmissionsPerDay { get; private set; }
         public double TotalSupply { get; private set; }
-        private Treasury Treasury { get; set; }
+        public Treasury Treasury { get; set; }
         public Economy(double MaxEmmissionsPerDay, double TreasuryUSDInitalBalance, double TreasuryTokenInitalBalance)
         {
             if (MaxEmmissionsPerDay <= 0)           throw new ArgumentException("Max Emmissions Per Day must be greater than 0");
